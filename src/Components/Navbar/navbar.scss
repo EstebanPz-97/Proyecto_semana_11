@@ -1,7 +1,11 @@
 .navbar{
-    background-color:blanchedalmond;
+    display:flex;
     a{
-        color: black;
+        color: white;
         text-decoration: none;
+        padding: 10px;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
     }
 }

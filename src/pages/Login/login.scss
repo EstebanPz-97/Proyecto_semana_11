@@ -1,0 +1,32 @@
+.login{
+    display: grid;
+    justify-content: center;
+}
+.container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color:white;
+    opacity: 0.4;
+    box-shadow: 5px 10px #889;
+    width: 90vh;
+    height: 70vh;
+}
+.container-login:hover{
+    opacity: 1;
+}
+.validation-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+        padding: 15px;
+        margin: 15px;
+        width: 100%;
+        border-radius: 15px
+    }
+}
+

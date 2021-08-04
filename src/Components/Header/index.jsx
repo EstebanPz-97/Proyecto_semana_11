@@ -1,10 +1,11 @@
-import './header.scss'
-import Navbar from '../Navbar/'
+import './header.scss';
+import Navbar from '../Navbar/';
+import { Logo } from '../Logo';
 
-export default function Header (){
+export const Header = () =>{
     return(
         <header className="header-api">
-            
+            <Logo />
             <Navbar login="sign in" register="sign up"/>
         </header>
     )
