@@ -1,6 +1,7 @@
 import { BrowserRouter as Switch, Route, Redirect } from "react-router-dom";
 import { Userheader } from "../Components/Userheader";
 import {Homepage } from '../pages/Homepage';
+import { Search } from "../pages/Search";
 
 export const UserRouter = () => {
      return (   
@@ -8,9 +9,7 @@ export const UserRouter = () => {
             <Userheader />
         <Switch>
           <Route exact path="/Homepage" component={Homepage}/>
-        <Route path="/Register"> 
-        </Route>
-        <Redirect to='/Homepage' />
+          <Route exact path="/Search" component={Search} />
         </Switch>
 
       </>

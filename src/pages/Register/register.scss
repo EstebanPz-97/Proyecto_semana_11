@@ -1,2 +1,15 @@
 @import '../../Assets/general.scss';
 
+.Registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-user{
+        margin: 10px;
+        width: 70%;
+        div{
+            margin: 10px;
+        }
+    }
+}

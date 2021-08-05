@@ -1,7 +1,10 @@
 import React from 'react'
 import "./register.scss";
 import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem'
+import MenuItem from '@material-ui/core/MenuItem';
+import Send from '@material-ui/icons/Send';
+import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const currencies=[
     {
@@ -30,7 +33,7 @@ export const Register = () => {
  return (
     <div className="Registro">
         <h1>Register</h1>
-        <form action="" className="fomulario-inscripcion">
+        <form action="" className="form-user">
         <TextField id="outlined-basic" label="Nombre" fullWidth variant="outlined" required type="text"/>
         <TextField id="outlined-basic" label="Apellido" fullWidth variant="outlined" required type="text"/>
         <TextField id="outlined-basic" label="Correo" fullWidth variant="outlined" required type="email" />
@@ -43,9 +46,16 @@ export const Register = () => {
             </MenuItem>
           ))}
         </TextField>
-        <input type="submit" value="Registrarse">
-        </input>
+        <Button
+        variant="contained"
+        color="primary"
+        endIcon={<Send>send</Send>}
+        type="submit"
+      >
+        Registrarse
+      </Button>
         </form>
+        <h3>Ya estoy registrado? <Link to="/login">Sign in</Link></h3>
 
     </div>
  );
