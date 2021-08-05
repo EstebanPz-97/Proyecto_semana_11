@@ -1,26 +1,24 @@
-import {Header} from './Components/Header';
-import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
-import {Login} from './pages/Login';
-import {Register} from './pages/Register';
-import { Homepage } from './pages/Homepage';
+import { useReducer,useEffect } from 'react';
+import { AuthContext } from './Auth/AuthContext';
+import { authReducer } from './Auth/authReducer';
+import { AppRouter } from './Routers/AppRouter';
 
-function App() {
-  return (
+const init = () => {
+  return JSON.parse (localStorage.getItem('user')) || {
+     logged: false
+  }
+}
+export const App = ()=> {
+  const [ user, dispatch ] = useReducer(authReducer, {}, init);
+  useEffect(() => {
+    localStorage.setItem( 'user', JSON.stringify(user) );
+}, [user])
+
+    return (
     <div className="App">
-      <Router>
-        <Header />
-        <Switch>
-        <Route path="/Login">
-          <Login />
-        </Route>
-        <Route path="/Register"> 
-          <Register />
-        </Route>
-        <Route path="/">
-          <Homepage />
-        </Route>
-        </Switch>
-      </Router>        
+      <AuthContext.Provider value ={{user, dispatch }}>
+      <AppRouter />
+      </AuthContext.Provider>
     </div>
   );
 }
