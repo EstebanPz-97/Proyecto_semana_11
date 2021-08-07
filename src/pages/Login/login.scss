@@ -1,0 +1,47 @@
+@import '../../Assets/general.scss';
+.login{
+    display: grid;
+    justify-content: center;
+}
+.container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color:$secundary-color;
+    opacity: 0.2;
+    box-shadow: 5px 10px $primary-color;
+    width: 90vh;
+    padding: 40px;
+    
+    .MuiButtonBase-root{
+        margin: 10px 0px;
+        padding: 10px;
+
+    }
+}
+a{
+    text-decoration: none;
+    color:$primary-color;
+}
+.container-login:hover{
+    opacity: 1;
+}
+.validation-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input-group{
+        margin: 50px 0px;
+        width: 100%;
+        border-radius: 15px
+    }    
+    .MuiInputBase-input{
+        width: 250px;
+    }
+}
+.boton-social{
+    width: 50%;
+}

@@ -1,0 +1,29 @@
+@import '../../Assets/general.scss';
+.buscador{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.form-buscador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        border-radius: 50px;
+    }
+    .MuiFilledInput-underline:before{
+        border-bottom:0px ;
+    }
+    .MuiFilledInput-adornedEnd {
+        padding: 0px 20px;
+        width: 30em;
+    }
+    button{
+        width: 170px;
+        background-color:$primary-color;
+        color: $secundary-color;
+        margin: 30px;
+        border-radius: 15px;
+    }
+}

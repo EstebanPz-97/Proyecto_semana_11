@@ -1,0 +1,14 @@
+.logo_app{
+    width: 50px;
+}
+.logo-nav{
+    display: flex;
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+    }
+}
