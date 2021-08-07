@@ -1,7 +1,18 @@
-.header-user{
-    display:  flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5rem;
-    background-color: black;
+@import '../../Assets/general.scss';
+header{
+    
+    .header-user{
+        padding: 1.5rem 0.5rem;
+        width: 100%;
+        display:  flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        background-color:transparent;
+        position: fixed;
+        &.bg-white{
+            background-color:$primary-color;
+            color:$primary-color ;
+        }
+    }
 }

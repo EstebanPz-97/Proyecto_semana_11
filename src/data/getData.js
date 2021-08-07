@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-let API ="https://superheroapi.com/api/6002785739794146/search/batman"
+let API ="https://api.jikan.moe/v3/search/anime?q=action"
+console.log(API);
 
 export function GetData(){
     const [heros, setHero] = useState([])

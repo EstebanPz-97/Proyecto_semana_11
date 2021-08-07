@@ -49,7 +49,7 @@ export const Login = ({history}) => {
                     <TextField id="input-with-icon-grid" label="contraseña" required type="password" />
                   </Grid>
                 </Grid></div>
-            <input type="submit" value="Entrar"/>
+            <Button variant="contained" type="submit" value="Entrar"/>
             </form>
             <Button variant="contained" color="primary" size="large" disableElevation onClick={handleLogin}>
                 login

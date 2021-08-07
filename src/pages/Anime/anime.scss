@@ -1,0 +1,9 @@
+@import '../../Assets/general.scss';
+.card-anime{
+    background-color: $primary-color;
+    text-align: center;
+    padding: 15px;
+    .title-card{
+        color:$secundary-color;
+    } 
+}
